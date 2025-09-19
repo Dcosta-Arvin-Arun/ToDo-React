@@ -2,7 +2,7 @@ import React, {useState} from "react";
 
 export default function ToDoList() {
 
-    const [tasks, setTasks] = useState(["this is a sapmle task", "b", "c"]);
+    const [tasks, setTasks] = useState(["Sample Task"]);
     const [newTask, setNewTask] = useState("");
 
     function handleInputChange(event: React.ChangeEvent<HTMLInputElement>) {
