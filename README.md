@@ -1,69 +1,123 @@
-# React + TypeScript + Vite
+# 📝 Modern To-Do List App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> A sleek, responsive to-do list application built with React, TypeScript, and Vite featuring a modern dark theme.
 
-Currently, two official plugins are available:
+![React](https://img.shields.io/badge/React-18.2.0-61DAFB?style=flat-square&logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0.2-3178C6?style=flat-square&logo=typescript)
+![Vite](https://img.shields.io/badge/Vite-4.4.5-646CFF?style=flat-square&logo=vite)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+- 📱 **Responsive Design** - Works seamlessly on desktop and mobile devices
+- 🌙 **Dark Theme** - Modern dark UI with gradient backgrounds and glassmorphism effects
+- ✏️ **Add Tasks** - Easily add new tasks with input validation
+- 🗑️ **Delete Tasks** - Remove completed or unwanted tasks
+- ⬆️⬇️ **Reorder Tasks** - Move tasks up and down to prioritize
+- 🎨 **Smooth Animations** - Polished hover effects and transitions
+- ♿ **Accessible** - Full keyboard navigation and screen reader support
+- 📦 **Lightweight** - No external dependencies, pure React implementation
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Quick Start
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Prerequisites
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- Node.js 16+ and npm
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Installation
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/Dcosta-Arvin-Arun/ToDo-React.git
+   cd ToDo-React
+   ```
+
+2. **Install dependencies**
+
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**
+
+   ```bash
+   npm run dev
+   ```
+
+4. **Open your browser**
+   Navigate to [http://localhost:5173](http://localhost:5173)
+
+## 🎯 Usage
+
+| Action          | Description                                                   |
+| --------------- | ------------------------------------------------------------- |
+| **Add Task**    | Type in the input field and click "Add" or press Enter        |
+| **Delete Task** | Click the red "Delete" button next to any task                |
+| **Move Up**     | Click the blue "Up" button to move a task higher in the list  |
+| **Move Down**   | Click the blue "Down" button to move a task lower in the list |
+
+## 🏗️ Built With
+
+- **[React](https://reactjs.org/)** - Frontend framework
+- **[TypeScript](https://www.typescriptlang.org/)** - Type safety
+- **[Vite](https://vitejs.dev/)** - Build tool and dev server
+- **[CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)** - Styling with modern features
+
+## 🎨 Design Features
+
+- **Glass Morphism** - Semi-transparent backgrounds with backdrop blur
+- **Gradient Theme** - Beautiful dark blue to navy gradient background
+- **Color-Coded Actions** - Green (Add), Red (Delete), Blue (Move)
+- **Hover Effects** - Interactive buttons with scale and shadow animations
+- **Mobile-First** - Responsive layout that adapts to screen size
+
+## 📁 Project Structure
+
+```
+├── public/
+│   └── vite.svg
+├── src/
+│   ├── App.tsx
+│   ├── main.tsx
+│   ├── ToDoList.tsx      # Main component
+│   ├── index.css         # Global styles
+│   └── vite-env.d.ts
+├── package.json
+├── tsconfig.json
+├── vite.config.ts
+└── README.md
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🔧 Available Scripts
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run dev          # Start development server
+npm run build        # Build for production
+npm run preview      # Preview production build
+npm run lint         # Run ESLint
 ```
+
+## 🌐 Browser Support
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/Dcosta-Arvin-Arun/ToDo-React/issues).
+
+## 👨‍💻 Author
+
+**Dcosta-Arvin-Arun**
+
+- GitHub: [@Dcosta-Arvin-Arun](https://github.com/Dcosta-Arvin-Arun)
+
+---
+
+⭐ **Star this repo if you find it helpful!**
